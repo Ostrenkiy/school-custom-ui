@@ -12,3 +12,8 @@ struct Track {
     var title: String
     var imagePath: String
 }
+
+struct TrackList {
+    var title: String
+    var tracks: [Track]
+}

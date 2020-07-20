@@ -10,6 +10,10 @@
 		086A430724C4E89E0016E861 /* TrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A430524C4E89E0016E861 /* TrackCollectionViewCell.swift */; };
 		086A430824C4E89E0016E861 /* TrackCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086A430624C4E89E0016E861 /* TrackCollectionViewCell.xib */; };
 		086A430A24C4EAE50016E861 /* GradientContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A430924C4EAE50016E861 /* GradientContainerView.swift */; };
+		086A431024C4F4690016E861 /* GothamBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086A430C24C4F4690016E861 /* GothamBook.ttf */; };
+		086A431124C4F4690016E861 /* GothamBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086A430D24C4F4690016E861 /* GothamBold.ttf */; };
+		086A431224C4F4690016E861 /* GothamMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086A430E24C4F4690016E861 /* GothamMedium.ttf */; };
+		086A431324C4F4690016E861 /* GothamLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086A430F24C4F4690016E861 /* GothamLight.ttf */; };
 		087EADE624C4DE1A00D8CAB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087EADE524C4DE1A00D8CAB5 /* AppDelegate.swift */; };
 		087EADE824C4DE1A00D8CAB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087EADE724C4DE1A00D8CAB5 /* SceneDelegate.swift */; };
 		087EADEA24C4DE1A00D8CAB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087EADE924C4DE1A00D8CAB5 /* ViewController.swift */; };
@@ -17,6 +21,9 @@
 		087EADEF24C4DE1C00D8CAB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087EADEE24C4DE1C00D8CAB5 /* Assets.xcassets */; };
 		087EADF224C4DE1C00D8CAB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087EADF024C4DE1C00D8CAB5 /* LaunchScreen.storyboard */; };
 		087EADFA24C4E63500D8CAB5 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087EADF924C4E63500D8CAB5 /* Track.swift */; };
+		0880E4FF24C4FB820061DCDC /* UIView+fromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880E4FE24C4FB820061DCDC /* UIView+fromNib.swift */; };
+		0880E50324C4FC030061DCDC /* TrackListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880E50224C4FC030061DCDC /* TrackListView.swift */; };
+		0880E50624C4FC120061DCDC /* TrackListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0880E50524C4FC120061DCDC /* TrackListView.xib */; };
 		B58EE578E67F08FAE65D6001 /* Pods_CustomUITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0C0BC0DDFB3BC6C438BD50 /* Pods_CustomUITest.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +31,10 @@
 		086A430524C4E89E0016E861 /* TrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionViewCell.swift; sourceTree = "<group>"; };
 		086A430624C4E89E0016E861 /* TrackCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCollectionViewCell.xib; sourceTree = "<group>"; };
 		086A430924C4EAE50016E861 /* GradientContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientContainerView.swift; sourceTree = "<group>"; };
+		086A430C24C4F4690016E861 /* GothamBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamBook.ttf; sourceTree = "<group>"; };
+		086A430D24C4F4690016E861 /* GothamBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamBold.ttf; sourceTree = "<group>"; };
+		086A430E24C4F4690016E861 /* GothamMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamMedium.ttf; sourceTree = "<group>"; };
+		086A430F24C4F4690016E861 /* GothamLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamLight.ttf; sourceTree = "<group>"; };
 		087EADE224C4DE1A00D8CAB5 /* CustomUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		087EADE524C4DE1A00D8CAB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		087EADE724C4DE1A00D8CAB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +44,9 @@
 		087EADF124C4DE1C00D8CAB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		087EADF324C4DE1C00D8CAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		087EADF924C4E63500D8CAB5 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		0880E4FE24C4FB820061DCDC /* UIView+fromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+fromNib.swift"; sourceTree = "<group>"; };
+		0880E50224C4FC030061DCDC /* TrackListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListView.swift; sourceTree = "<group>"; };
+		0880E50524C4FC120061DCDC /* TrackListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackListView.xib; sourceTree = "<group>"; };
 		1C972C685AA73231EFA9DDAD /* Pods-CustomUITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomUITest.debug.xcconfig"; path = "Target Support Files/Pods-CustomUITest/Pods-CustomUITest.debug.xcconfig"; sourceTree = "<group>"; };
 		3A06588692BC2DA589B50125 /* Pods-CustomUITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomUITest.release.xcconfig"; path = "Target Support Files/Pods-CustomUITest/Pods-CustomUITest.release.xcconfig"; sourceTree = "<group>"; };
 		4C0C0BC0DDFB3BC6C438BD50 /* Pods_CustomUITest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomUITest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		086A430B24C4F3610016E861 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				086A430D24C4F4690016E861 /* GothamBold.ttf */,
+				086A430C24C4F4690016E861 /* GothamBook.ttf */,
+				086A430F24C4F4690016E861 /* GothamLight.ttf */,
+				086A430E24C4F4690016E861 /* GothamMedium.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		087EADD924C4DE1A00D8CAB5 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +96,7 @@
 		087EADE424C4DE1A00D8CAB5 /* CustomUITest */ = {
 			isa = PBXGroup;
 			children = (
+				086A430B24C4F3610016E861 /* font */,
 				087EADE524C4DE1A00D8CAB5 /* AppDelegate.swift */,
 				087EADE724C4DE1A00D8CAB5 /* SceneDelegate.swift */,
 				087EADE924C4DE1A00D8CAB5 /* ViewController.swift */,
@@ -82,8 +108,19 @@
 				086A430524C4E89E0016E861 /* TrackCollectionViewCell.swift */,
 				086A430624C4E89E0016E861 /* TrackCollectionViewCell.xib */,
 				086A430924C4EAE50016E861 /* GradientContainerView.swift */,
+				0880E4FE24C4FB820061DCDC /* UIView+fromNib.swift */,
+				0880E50424C4FC070061DCDC /* TrackListView */,
 			);
 			path = CustomUITest;
+			sourceTree = "<group>";
+		};
+		0880E50424C4FC070061DCDC /* TrackListView */ = {
+			isa = PBXGroup;
+			children = (
+				0880E50224C4FC030061DCDC /* TrackListView.swift */,
+				0880E50524C4FC120061DCDC /* TrackListView.xib */,
+			);
+			path = TrackListView;
 			sourceTree = "<group>";
 		};
 		86E737D8C0C396AE009C2821 /* Frameworks */ = {
@@ -164,9 +201,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				086A430824C4E89E0016E861 /* TrackCollectionViewCell.xib in Resources */,
+				086A431024C4F4690016E861 /* GothamBook.ttf in Resources */,
 				087EADF224C4DE1C00D8CAB5 /* LaunchScreen.storyboard in Resources */,
+				0880E50624C4FC120061DCDC /* TrackListView.xib in Resources */,
+				086A431324C4F4690016E861 /* GothamLight.ttf in Resources */,
+				086A431224C4F4690016E861 /* GothamMedium.ttf in Resources */,
 				087EADEF24C4DE1C00D8CAB5 /* Assets.xcassets in Resources */,
 				087EADED24C4DE1A00D8CAB5 /* Main.storyboard in Resources */,
+				086A431124C4F4690016E861 /* GothamBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,11 +261,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0880E4FF24C4FB820061DCDC /* UIView+fromNib.swift in Sources */,
 				087EADEA24C4DE1A00D8CAB5 /* ViewController.swift in Sources */,
 				087EADE624C4DE1A00D8CAB5 /* AppDelegate.swift in Sources */,
 				086A430A24C4EAE50016E861 /* GradientContainerView.swift in Sources */,
 				087EADE824C4DE1A00D8CAB5 /* SceneDelegate.swift in Sources */,
 				086A430724C4E89E0016E861 /* TrackCollectionViewCell.swift in Sources */,
+				0880E50324C4FC030061DCDC /* TrackListView.swift in Sources */,
 				087EADFA24C4E63500D8CAB5 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

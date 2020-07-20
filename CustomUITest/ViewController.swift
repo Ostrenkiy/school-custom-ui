@@ -10,54 +10,45 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var gradientContainerView: GradientContainerView!
     
-    var tracks: [Track] = [
-        Track(title: "Chandelier", imagePath: "https://picsum.photos/200"),
-        Track(title: "Chandelier2", imagePath: "https://picsum.photos/200"),
-        Track(title: "Chandelier3", imagePath: "https://picsum.photos/200"),
+    var trackLists: [TrackList] = [
+        TrackList(title: "Sia's songs", tracks: [
+            Track(title: "Chandelier", imagePath: "https://picsum.photos/600"),
+            Track(title: "Chandelier2", imagePath: "https://picsum.photos/601"),
+            Track(title: "Chandelier3", imagePath: "https://picsum.photos/602"),
+        ]),
+        TrackList(title: "Top pick", tracks: [
+            Track(title: "Best song", imagePath: "https://picsum.photos/603"),
+            Track(title: "Numb", imagePath: "https://picsum.photos/604"),
+            Track(title: "Hips don't lie", imagePath: "https://picsum.photos/605"),
+            Track(title: "Du hast", imagePath: "https://picsum.photos/606"),
+        ])
     ]
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "TrackCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "TrackCollectionViewCell")
-
+        setupStackView()
+        gradientContainerView.colors = [
+            UIColor.white.cgColor,
+            UIColor.clear.cgColor
+        ]
         // Do any additional setup after loading the view.
     }
-}
-
-extension ViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 228)
-    }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
-    }
-}
-
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tracks.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrackCollectionViewCell", for: indexPath) as? TrackCollectionViewCell else {
-            return UICollectionViewCell()
+    private func setupStackView() {
+        trackLists.map { trackList in
+            let view: TrackListView = .fromNib()
+            view.setup(trackList: trackList)
+            return view
+        }.forEach {
+            stackView.addArrangedSubview($0)
         }
-        
-        cell.update(track: tracks[indexPath.item])
-        return cell
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }

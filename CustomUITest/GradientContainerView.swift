@@ -30,13 +30,16 @@ class GradientContainerView: UIView {
             return
         }
         gradientLayer.colors = colors
-        if isHorizontal {
-            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
-            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
-        } else {
-            gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
-            gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
-        }
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.5)
+
+//        if isHorizontal {
+//            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+//            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+//        } else {
+//            gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
+//            gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+//        }
     }
 
     override func awakeFromNib() {
